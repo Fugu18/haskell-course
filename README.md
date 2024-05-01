@@ -4,7 +4,7 @@
 
 > *The easiest way to learn Haskell* - R.M.
 
-**This course is designed to teach non-engineers (e.g., self-taught/bootcamp coders) Haskell from zero to productive in an interactive, easy-to-follow way.** The course doesn't contain content specific to [Marlowe](https://marlowe.iohk.io/) or [Plutus](https://plutus.readthedocs.io/en/latest/), but it will cover everything needed to work with them.
+**This course is designed to teach non-engineers (e.g., self-taught/bootcamp coders) Haskell from zero to productive in an interactive, easy-to-follow way.** The course doesn't contain content specific to Marlowe or Plutus, but it will cover all the Haskell you'll needed to work with them.
 
 For a more detailed explanation, keep reading or watch the introduction video:
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://youtu.be/H1vbUKMKvnM)
@@ -258,7 +258,7 @@ In this section, we learn about Haskell tooling and the necessary concepts to st
     - `NumericUnderscores`
     - `TypeApplications`
 
-### 14. Handling Errors [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/input-output-hk/haskell-course/HEAD?labpath=%2Flessons%2F15-Handling-Errors.ipynb) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=QkUCHFG1hK8&list=PLNEK_Ejlx3x1D9Vq5kqeC3ZDEP7in4dqb&index=16)
+### 15. Handling Errors [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/input-output-hk/haskell-course/HEAD?labpath=%2Flessons%2F15-Handling-Errors.ipynb) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=QkUCHFG1hK8&list=PLNEK_Ejlx3x1D9Vq5kqeC3ZDEP7in4dqb&index=16)
 
 - There're always `Exception`s to the rule
 - Speed-running `Exception`s with a dumb self-driving 🤖 car 🚗
@@ -271,102 +271,94 @@ In this section, we learn about Haskell tooling and the necessary concepts to st
 - Tradeoffs
   - So, what should I use?
 
-### 15. Learning on your own and Map
+### 16. Learning on your own and final section project [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/input-output-hk/haskell-course/HEAD?labpath=%2Flessons%2F16-Gaining-your-independence-and-project.ipynb) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=ObZ_1eap5MY&list=PLNEK_Ejlx3x1D9Vq5kqeC3ZDEP7in4dqb&index=17)
 
-- Using GHCi to find out more
-- Hoogle
-- HaskellWiki
-- Walking through while teaching Map module
+- Small tips and tricks 🤹
+  - REPL
+  - Hackage
+  - Hoogle
+  - `undefined`
+  - Type Holes 🕳️
+- Section's Final Project 🥳
+
+---
+
+### BEGINNER SECTION - BASIC ABSTRACTIONS & EFFECTS - 🐥⟶🐓
+In this section, we learn about a few of the most useful and talked about Abstractions in Haskell and how we deal with effects in general (not only `IO`).
+
+---
+
+### 17. Semigroup and Monoid [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/input-output-hk/haskell-course/HEAD?labpath=%2Flessons%2F17-Semigroup-and-Monoid.ipynb) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=-O1ZApHPvkg&list=PLNEK_Ejlx3x1D9Vq5kqeC3ZDEP7in4dqb&index=18)
+
+- What does it mean to abstract a pattern?
+- Why abstracting patterns (in general)?
+- Teaser: Why abstracting `Semigroup` and `Monoid`?
+- The `Semigroup` type class
+- The `Monoid` type class
+- What can I do with `Semigroup` and `Monoid`?
+
+### 18. Functor [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/input-output-hk/haskell-course/HEAD?labpath=%2Flessons%2F18-Functor.ipynb) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=Fb4qD5PWEs8&list=PLNEK_Ejlx3x1D9Vq5kqeC3ZDEP7in4dqb&index=19)
+
+- Abstracting the `map` function
+- The `Functor` type class
+- Defining `Functor` instances
+- Seemingly unintuitive `Functor` instances
+  - The `Either a` functor 🤔
+  - The `(,) a` functor 🤨
+  - The `(->) r` functor 🤯
+- Defining the `<$>` operator and *lifting* 🏋️ a function
+- `Functor` nesting dolls 🪆
+- Extra functions and `Functor` as defined in `base`
+
+
+### 19. Applicative and Effects
+
+- TODO
+
+### 20. Project using `Functor` and `Applicative`
+
+- TODO 
+
+### x. Monad
+
+- TODO
+
+### x. Reader, Writer, and State Monads
+
+- TODO
+
+### Maybe speed-running other type classes? 🤔
+
+- TODO
+
+### x. Final project
+
 - TODO
 
 ---
 
-#### YOU'RE READY FOR MARLOWE! 🥳🎉 (Keep going for Plutus)
-
----
-
-### BEGINNER SECTION - BASIC ABSTRACTIONS - 🐥⟶🐓
-In this section, we learn about a few of the most useful and talked about Abstractions in Haskell.
-
----
-
-### x. Monoid
-
-- Basic idea (definition without details)
-- Intuitive examples
-- Extracting the pattern
-- Complete definition (with all the details/laws)
-
-### x. Functor
-
-- Basic idea (definition without details)
-- Intuitive examples
-- Extracting the pattern
-- Complete definition (with all the details/laws)
-
-### x. Applicative
-
-- Basic idea (definition without details)
-- Intuitive examples
-- Extracting the pattern
-- Complete definition (with all the details/laws)
-
-### x. Aeson?
-
-- TODO (some project using Aeson)
-
-### x. Monad
-
-- Basic idea (definition without details)
-- Intuitive examples
-- Extracting the pattern
-- Complete definition (with all the details/laws)
-- `do` notation in general
-
-### x. Reader Monad
-
-- Incentive/Motivation
-- Binding strategy (see [here](https://wiki.haskell.org/All_About_Monads#The_Reader_monad))
-- Definition
-- Examples
-
-### x. Writer Monad
-
-- Incentive/Motivation
-- Binding strategy
-- Definition
-- Examples
-
-### x. State Monad
-
-- Incentive/Motivation
-- Binding strategy
-- Definition
-- Examples
-
-### x. Monadic functions / Operating with Monads
-
-- liftM
-- sequence and sequence\_
-- mapM and mapM\_
-- filterM
-- foldM
-- ...
-
----
-
 #### 🥳 CONGRATULATIONS! 🥳 You can call yourself a (beginner) Haskell developer!
+Thank you for going on this journey with me! Please feel free to give us feedback through issues, email, or Twitter. And share this course if you find it valuable. 😄🙌
 
 ---
 
-### TODO: It keeps going, but I'm not sure about the outline yet. 😬
-Possible subjects:
-- More abstractions?
-- Testing?
-- Concurrency and Parallelism?
-- TLP?
-- Template Haskell?
-- ...
+### Where can you go from now?
+
+It depends on your preferences. You could:
+
+- If you're interested in Cardano, explore Marlowe, Plutus, Atlas, CardanoAPI, and other Cardano-related tools and libraries.
+- Start your own project and learn what you need on the way (e.g., a server, a compiler, a full-stack app using IHP)
+- Read Haskell books and sources that go into more advanced subjects. See recommended resources here.
+- Learn about specific subjects, for example (organized roughly by difficulty):
+  1. Explore the `base` library and understand all types and type classes.
+  1. Learn about Testing (unit vs property testing and QuickCheck).
+  1. Explore how to deal with Concurrency and Parallelism.
+  1. Learn about Parsers (Parser combinators, `Alternative` type class, `MonadPlus`, Parsec library).
+  1. Learn how Haskell deals with data structures under the Hood.
+  1. Monad Transformers and Free monads.
+  1. Generic programming.
+  1. Meta programming with Template Haskell.
+  1. Type-level programming.
 
 ---
 
